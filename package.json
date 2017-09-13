@@ -1,45 +1,31 @@
 {
-  "_from": "@mortonprod/react-product-up-component",
-  "_id": "@mortonprod/react-product-up-component@1.0.0",
-  "_inBundle": false,
-  "_integrity": "sha512-hxZrF83ZDjN/QHr4okeputivYl3/nwX8ltFuz7hUpHv+2cawgiiI4Qd7YSABNlWLIYx+3uSbIuGtQx5AaZ9qCg==",
-  "_location": "/@mortonprod/react-product-up-component",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "@mortonprod/react-product-up-component",
-    "name": "@mortonprod/react-product-up-component",
-    "escapedName": "@mortonprod%2freact-product-up-component",
-    "scope": "@mortonprod",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+  "name": "@mortonprod/react-product-up-component",
+  "version": "1.3.4",
+  "description": "This component works with react-product-component. As you scroll down it exposes more and more elements from the bottom of the screen.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run tests",
+    "build": "./node_modules/.bin/webpack --progress"
   },
-  "_requiredBy": [
-    "#USER",
-    "/"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mortonprod/react-productUp-component.git"
+  },
+  "keywords": [
+    "react"
   ],
-  "_resolved": "https://registry.npmjs.org/@mortonprod/react-product-up-component/-/react-product-up-component-1.0.0.tgz",
-  "_shasum": "fad96f460f9d57422578c9d96d710187f9a42031",
-  "_spec": "@mortonprod/react-product-up-component",
-  "_where": "/Users/alexandermorton/Documents/Zenith/boutiqueBackend_v2/client",
-  "author": {
-    "name": "Alexander Morton"
-  },
+  "author": "Alexander Morton",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mortonprod/react-productUp-component/issues"
   },
-  "bundleDependencies": false,
+  "homepage": "https://github.com/mortonprod/react-productUp-component#readme",
   "dependencies": {
-    "@mortonprod/react-product-component": "^1.2.2",
+    "@mortonprod/react-product-component": "^1.3.3",
     "lodash": "^4.17.4",
     "react": "^15.6.1",
-    "react-addons-css-transition-group": "^15.6.0",
-    "react-router-dom": "^4.1.2"
+    "react-addons-css-transition-group": "^15.6.0"
   },
-  "deprecated": false,
-  "description": "This is a small react component to display multiple products moving up as you scroll down",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
@@ -52,24 +38,10 @@
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "ignore-loader": "^0.1.2",
+    "optimize-css-assets-webpack-plugin": "^3.1.1",
     "style-loader": "^0.18.2",
     "svg-inline-loader": "^0.8.0",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.4.1"
-  },
-  "homepage": "https://github.com/mortonprod/react-productUp-component#readme",
-  "keywords": [
-    "react"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "name": "@mortonprod/react-product-up-component",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mortonprod/react-productUp-component.git"
-  },
-  "scripts": {
-    "build": "webpack --progress",
-    "test": "npm run tests"
-  },
-  "version": "1.0.0"
+  }
 }

@@ -1,12 +1,14 @@
 'use strict';
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path');
 module.exports =  {
   entry: {
 		bundle: "./productsMoveUp.js"
 	},
-	plugins: [new ExtractTextPlugin("index.css")],
+	plugins: [new ExtractTextPlugin("index.css"),new OptimizeCssAssetsPlugin(), new UglifyJSPlugin() ],
   module:{
   loaders: [
     {

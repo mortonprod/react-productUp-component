@@ -1,7 +1,7 @@
 ﻿import React, { Component, findDOMNode } from 'react';
-import Product from "../product/product";
 import * as _ from "lodash";
-
+import Product from "@mortonprod/react-product-component";
+import "@mortonprod/react-product-component/dist/index.css";
 import "./productsMoveUp.css";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
 /**
@@ -9,7 +9,6 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
     As you scroll down it will expose more and more products to the user. 
 */
 export default class ProductsMoveUp extends Component {
-    parentDiv = null;
     constructor(props){
         super(props);
         this.scroll = _.throttle(this.scroll,500,{trailing:true,leading:true});
@@ -20,6 +19,7 @@ export default class ProductsMoveUp extends Component {
             end = this.getNumBoxes();
         }
         this.state = {end:end}
+				this.parentDiv = null;
     }
     scroll(event){
         if(this.parentDiv !== null){
